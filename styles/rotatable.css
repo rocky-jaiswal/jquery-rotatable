@@ -31,7 +31,6 @@
 
 .rotatable {
   display: inline-block;
-  font: 20px/1 fontelico;
   -webkit-animation: spin 1.2s infinite;
   -moz-animation: spin 1.2s infinite;
   -ms-animation: spin 1.2s infinite;
