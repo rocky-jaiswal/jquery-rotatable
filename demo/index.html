@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Rotatable - Demo</title>
+		<link href="../styles/rotatable.css" media="screen" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/jquery.rotatable.min.js"></script>
+		<style type="text/css">
+			.box {
+				width: 50px;
+				margin: 20px;
+				background-color: #e66;
+				padding: 10px;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">Hello</div>
+		<script>
+			$(function() {
+				$(".box").rotatable();
+			});
+		</script>
+	</body>
+</html>

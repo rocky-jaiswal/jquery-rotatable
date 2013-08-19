@@ -1,0 +1,36 @@
+{
+	"name": "rotatable",
+	"title": "jQuery rotatable",
+	"description": "A simple jquery plugin to rotate stuff",
+	"keywords": [
+		"jquery",
+		"rotatable",
+		"plugins"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Rocky Jaiswal",
+		"email": "rocky.jaiswal@gmail.com",
+		"url": "https://github.com/rocky-jaiswal"
+	},
+	"maintainers": [
+		{
+			"name": "Rocky Jaiswal",
+			"email": "rocky.jaiswal@gmail.com",
+			"url": "https://github.com/rocky-jaiswal"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"bugs": "https://github.com/rocky-jaiswal/jquery-rotatable/issues",
+	"homepage": "https://github.com/rocky-jaiswal/jquery-rotatable/issues",
+	"docs": "https://github.com/rocky-jaiswal/jquery-rotatable/issues#readme",
+	"download": "https://github.com/rocky-jaiswal/jquery-rotatable/dist",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}
