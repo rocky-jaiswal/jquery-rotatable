@@ -27,4 +27,4 @@
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/)
+[MIT License](http://opensource.org/licenses/MIT)
