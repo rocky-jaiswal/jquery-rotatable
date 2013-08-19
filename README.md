@@ -17,10 +17,10 @@
 	```
 3. Include the CSS from the "styles" folder in your project.
 
-4. Call the plugin, in the jQuery ready function:
+4. Call the plugin, in the jQuery ready function, passing the events to trigger the rotation "on" and "off" (off is optional) :
 
 	```javascript
-	$("#element").rotatable();
+	$("#element").rotatable({on: "mouseover", off: "mouseout"});
 	```
 5. Move your mouse over the "#element" and watch it rotate.
 

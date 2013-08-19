@@ -9,8 +9,7 @@ do ($ = jQuery, window, document) ->
 
 	# Create the defaults once
 	pluginName = "rotatable"
-	defaults =
-		property: "value"
+	defaults = {}
 
 	# The actual plugin constructor
 	class Rotatable
@@ -28,16 +27,15 @@ do ($ = jQuery, window, document) ->
 			# Place initialization logic here
 			# You already have access to the DOM element and the options via the instance,
 			# e.g., @element and @settings
-			$(@element).each ->
-				$(@).on("mouseover", (e) ->
-					$(e.currentTarget).addClass("rotatable")
-				)
-				$(@).on("mouseout", (e) ->
-					$(e.currentTarget).removeClass("rotatable") if $(e.currentTarget).hasClass("rotatable")
-				)
+			for elem in $(@element)
+				$(elem).on(@settings.on, @makeRotatable)
+				$(elem).on(@settings.off, @removeRotatable) if @settings.off
 
-		sayHi: (e) ->
-			# some logic
+		makeRotatable: (e) ->
+			$(e.currentTarget).addClass("rotatable")
+
+		removeRotatable: (e) ->
+			$(e.currentTarget).removeClass("rotatable") if $(e.currentTarget).hasClass("rotatable")
 
 	# A really lightweight plugin wrapper around the constructor,
 	# preventing against multiple instantiations
